@@ -1,7 +1,7 @@
-# USAGE:
+## USAGE:
 
 
-## json_to_mwl.py
+### json_to_mwl.py
 
 1.  INSTALL the PIP module for pydicom if not already on your system:  https://github.com/pydicom/pydicom, sudo python3 -m pip install pydicom
     
