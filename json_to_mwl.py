@@ -11,7 +11,7 @@ from datetime import datetime
 
 
 mwljson = {
-    "AccessionNumber": "DEVACC00000077",
+    "AccessionNumber": "TEST_MWL",
     "AdditionalPatientHistory": "Test thigh",
     "AdmittingDiagnosesDescription": "A01.02,A02.29,C25.0,C43.72,C44.709,C44.722",
     "Allergies": "",
