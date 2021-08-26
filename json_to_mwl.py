@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Make it execuatble if you want to use the shebang
+
 import pydicom # https://github.com/pydicom/pydicom, sudo python3 -m pip install pydicom
 from pydicom.datadict import dictionary_keyword
 from pydicom import dcmread, dcmwrite
