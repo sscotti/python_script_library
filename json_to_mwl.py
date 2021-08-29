@@ -15,7 +15,7 @@ from datetime import datetime
 
 mwljson = {
     "AccessionNumber": "TEST_MWL",
-    "AdditionalPatientHistory": "Test thigh",
+    "AdditionalPatientHistory": "Test Leg",
     "AdmittingDiagnosesDescription": "A01.02,A02.29,C25.0,C43.72,C44.709,C44.722",
     "Allergies": "",
     "ContentDate": "20210817",
@@ -55,7 +55,7 @@ mwljson = {
       {
         "Modality": "MR",
         "RequestedProcedureID": "0030",
-        "ScheduledProcedureStepDescription": "TIBIA AND FIBULA W/WO (R)",
+        "ScheduledProcedureStepDescription": "TIBIA AND FIBULA",
         "ScheduledProcedureStepID": "0030",
         "ScheduledProcedureStepStartDate": "20210817",
         "ScheduledProcedureStepStartTime": "090000",
@@ -66,15 +66,33 @@ mwljson = {
             "CodingSchemeDesignator": "C4"
           }
         ],
-        "ScheduledStationAETitle": "NmrEsaote"
+        "ScheduledStationAETitle": "",
+        "StudyInstanceUID": ""
+      },
+      {
+        "Modality": "MR",
+        "RequestedProcedureID": "0030",
+        "ScheduledProcedureStepDescription": "TIBIA AND FIBULA / Dynamic",
+        "ScheduledProcedureStepID": "0030",
+        "ScheduledProcedureStepStartDate": "20210817",
+        "ScheduledProcedureStepStartTime": "090000",
+        "ScheduledProtocolCodeSequence": [
+          {
+            "CodeMeaning": "[\"73720\",\"A9579\"]",
+            "CodeValue": "0030",
+            "CodingSchemeDesignator": "C4"
+          }
+        ],
+        "ScheduledStationAETitle": "",
+        "StudyInstanceUID": ""
       }
     ],
     "SpecificCharacterSet": "ISO_IR 192",
     "StudyDescription": "TIBIA AND FIBULA W/WO (R)",
-    "StudyInstanceUID": "1.3.6.1.4.1.56016.0.1.1.175.1629207598"
+    "StudyInstanceUID": ""
   }
   
-WORKLIST_DIR = '/Users/sscotti/Desktop/ORTHANC_DOCKER_RIS/MWL/'
+WORKLIST_DIR = ''
   
 # METHOD TO CONSTRUCT DATASET FROM JSON, SEE SAMPLE, PASS IN the JSON for the Dataset and a Blank Dataset
 
