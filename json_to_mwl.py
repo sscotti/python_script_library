@@ -14,8 +14,9 @@ from datetime import datetime
 
 
 mwljson = {
+
     "AccessionNumber": "TEST_MWL",
-    "AdditionalPatientHistory": "Test Leg",
+    "AdditionalPatientHistory": "Test thigh",
     "AdmittingDiagnosesDescription": "A01.02,A02.29,C25.0,C43.72,C44.709,C44.722",
     "Allergies": "",
     "ContentDate": "20210817",
@@ -49,47 +50,29 @@ mwljson = {
       }
     ],
     "ReferringPhysicianName": "0002:^^",
-    "RequestedProcedureDescription": "TIBIA AND FIBULA W/WO (R)",
-    "RequestedProcedureID": "0030",
+    "RequestedProcedureDescription": "MRI WRIST - Dynamic (R)",
+    "RequestedProcedureID": "0017",
     "ScheduledProcedureStepSequence": [
-      {
+    {
         "Modality": "MR",
-        "RequestedProcedureID": "0030",
-        "ScheduledProcedureStepDescription": "TIBIA AND FIBULA",
-        "ScheduledProcedureStepID": "0030",
-        "ScheduledProcedureStepStartDate": "20210817",
-        "ScheduledProcedureStepStartTime": "090000",
+        "RequestedProcedureID": "0017",
+        "ScheduledProcedureStepDescription": "MRI WRIST - Dynamic (R)",
+        "ScheduledProcedureStepID": "0017",
+        "ScheduledProcedureStepStartDate": "20210830",
+        "ScheduledProcedureStepStartTime": "150000",
         "ScheduledProtocolCodeSequence": [
           {
-            "CodeMeaning": "[\"73720\",\"A9579\"]",
-            "CodeValue": "0030",
+            "CodeMeaning": "[\"73218\",\"96004\",\"76100\"]",
+            "CodeValue": "0017",
             "CodingSchemeDesignator": "C4"
           }
         ],
-        "ScheduledStationAETitle": "",
-        "StudyInstanceUID": ""
-      },
-      {
-        "Modality": "MR",
-        "RequestedProcedureID": "0030",
-        "ScheduledProcedureStepDescription": "TIBIA AND FIBULA / Dynamic",
-        "ScheduledProcedureStepID": "0030",
-        "ScheduledProcedureStepStartDate": "20210817",
-        "ScheduledProcedureStepStartTime": "090000",
-        "ScheduledProtocolCodeSequence": [
-          {
-            "CodeMeaning": "[\"73720\",\"A9579\"]",
-            "CodeValue": "0030",
-            "CodingSchemeDesignator": "C4"
-          }
-        ],
-        "ScheduledStationAETitle": "",
-        "StudyInstanceUID": ""
+        "ScheduledStationAETitle": ""
       }
     ],
     "SpecificCharacterSet": "ISO_IR 192",
-    "StudyDescription": "TIBIA AND FIBULA W/WO (R)",
-    "StudyInstanceUID": ""
+    "StudyDescription": "MRI WRIST - Dynamic (R)",
+    "StudyInstanceUID": "1.3.6.1.4.1.56016.0.1.1.175.162920759899999"
   }
   
 WORKLIST_DIR = ''
