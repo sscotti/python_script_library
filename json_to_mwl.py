@@ -12,68 +12,87 @@ import time
 import datetime
 from datetime import datetime
 
+#  Additional tags:  AdditionalPatientHistory, AdmittingDiagnosesDescription, ImageComments, InstitutionName
+#  LastMenstrualDate, Occupation, OperatorsName, PatientComments, PatientSize, ReferringPhysicianIdentificationSequence, edit as needed.
 
 mwljson = {
 
-    "AccessionNumber": "TEST_MWL",
-    "AdditionalPatientHistory": "Test thigh",
-    "AdmittingDiagnosesDescription": "A01.02,A02.29,C25.0,C43.72,C44.709,C44.722",
-    "Allergies": "",
-    "ContentDate": "20210817",
-    "ContentTime": "133959.674187",
-    "ImageComments": "Tech:  SP",
-    "InstitutionName": "",
-    "LastMenstrualDate": "",
-    "MedicalAlerts": "",
-    "Modality": "MR",
-    "Occupation": "",
-    "OperatorsName": "Tech^SDS",
-    "PatientBirthDate": "19571116",
-    "PatientComments": "",
-    "PatientID": "DEV0000002",
-    "PatientName": "Mouse^Mickey^LIttle",
-    "PatientSex": "M",
-    "PatientSize": "",
-    "PatientWeight": "",
-    "ReferencedStudySequence": [],
-    "ReferringPhysicianIdentificationSequence": [
-      {
-        "InstitutionName": "",
-        "PersonIdentificationCodeSequence": [
-          {
-            "CodeMeaning": "Local Code",
-            "CodeValue": "0002",
-            "CodingSchemeDesignator": "L"
-          }
-        ],
-        "PersonTelephoneNumbers": "^WPN^CP^"
-      }
+
+    "SpecificCharacterSet": "ISO_IR 100",
+    "Modality": "DX",
+    "AccessionNumber": "AccessionNumber",
+    "ReferringPhysicianName": "Last^First^Middle",
+    "ReferencedStudySequence": [
+    	{
+        "ReferencedSOPClassUID": "",
+        "ReferencedSOPInstanceUID": ""
+    	}
     ],
-    "ReferringPhysicianName": "0002:^^",
-    "RequestedProcedureDescription": "MRI WRIST - Dynamic (R)",
-    "RequestedProcedureID": "0017",
+    
+    "ReferencedPatientSequence": [
+    	{
+        "ReferencedSOPClassUID": "",
+        "ReferencedSOPInstanceUID": ""
+    	}
+    ],
+    "PatientName": "Last^First^Middle",
+    "PatientID": "PatientID",
+    "PatientBirthDate": "19710504",
+    "PatientSex": "M",
+    "PatientAge": "",
+    "PatientWeight": "",
+    "PregnancyStatus": "",
+    "MedicalAlerts": "MedicalAlerts",
+    "Allergies": "Allergies",
+    "StudyInstanceUID": "",
+    "StudyID": "StudyID",
+    "RequestingPhysician": "Last^First^Middle",
+    "RequestedProcedureDescription": "RequestedProcedureDescription",
+    "RequestedProcedureCodeSequence": [
+    	{
+    		"CodeValue": "1234567890123456",
+    		"CodingSchemeDesignator": "1234567890123456",
+    		"CodingSchemeVersion": "1234567890123456",
+    		"CodeMeaning": "1234567890123456"
+    	
+    	}
+    ],
+    "AdmissionID": "AdmissionID",
+    "SpecialNeeds": "SpecialNeeds",
+    "CurrentPatientLocation": "1234567890123456",
+    "PatientState": "PatientState",
     "ScheduledProcedureStepSequence": [
     {
-        "Modality": "MR",
-        "RequestedProcedureID": "0017",
-        "ScheduledProcedureStepDescription": "MRI WRIST - Dynamic (R)",
-        "ScheduledProcedureStepID": "0017",
-        "ScheduledProcedureStepStartDate": "20210830",
-        "ScheduledProcedureStepStartTime": "150000",
+        "Modality": "DX",
+        "RequestedContrastAgent": "1234567890123456",
+        "ScheduledStationAETitle": "AETitle",
+        "ScheduledProcedureStepStartDate": "20220525",
+        "ScheduledProcedureStepStartTime": "151004",
+        "ScheduledPerformingPhysicianName": "Last^First^Middle",
+        "ScheduledProcedureStepDescription": "ScheduledProcedureStepDescription",
         "ScheduledProtocolCodeSequence": [
           {
-            "CodeMeaning": "[\"73218\",\"96004\",\"76100\"]",
-            "CodeValue": "0017",
-            "CodingSchemeDesignator": "C4"
+            "CodeValue": "1234567890123456",
+            "CodingSchemeDesignator": "1234567890123456",
+            "CodingSchemeVersion": "1234567890123456",
+            "CodeMeaning": "1234567890123456"
+            
           }
         ],
-        "ScheduledStationAETitle": ""
+        "ScheduledProcedureStepID": "X019",
+        "ScheduledStationName": "1234567890123456",
+        "ScheduledProcedureStepLocation": "X-Ray",
+        "PreMedication": "PreMedication",
+        "ScheduledProcedureStepStatus": "SCHEDULED"
+        
       }
     ],
-    "SpecificCharacterSet": "ISO_IR 192",
-    "StudyDescription": "MRI WRIST - Dynamic (R)",
-    "StudyInstanceUID": "1.3.6.1.4.1.56016.0.1.1.175.162920759899999"
+    "RequestedProcedureID": "1234567890123456",
+    "RequestedProcedurePriority": "ROUTINE",
+    "PatientTransportArrangements": "1234567890123456",
+    "ConfidentialityConstraintOnPatientDataDescription": "1234567890123456"
   }
+
   
 WORKLIST_DIR = ''
   
